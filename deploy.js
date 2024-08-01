@@ -2,7 +2,7 @@ const { ethers } = require("ethers");
 
 async function main() {
     const provider = new ethers.providers.JsonRpcProvider(`https://bsc-dataseed1.binance.org:443`);
-  const wallet = new ethers.Wallet("bf2be402342f81a5cd27d4bf097612ecdffe9eba1410f8dca658ea2f435dca7e", provider);
+  const wallet = new ethers.Wallet(PRIVATE_KEY, provider);
   const abi = ; // ABI array of your contract
   const bytecode = "" // Bytecode of your contract
 
